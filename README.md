@@ -36,29 +36,25 @@ Features:
 - Reads leave application data from Excel
 - Logs in to the web portal
 - Submits each row as a leave application
-- If a duplicate is detected, takes a screenshot
-- Sends an email with error details and screenshot attached
+- If a duplicate is detected, it takes a screenshot
+- Sends an email with error details and a screenshot attached
 
 How to Run:
 1. Open `Main.xaml` in UiPath Studio
 2. Place your Excel file in a known folder and update the `Read Range` path
-3. Set up the correct file path in `Take Screenshot` and `Save Image` activity
+3. Set up the correct file path in the `Take Screenshot` and `Save Image` activities
 4. Configure Outlook account in UiPath to enable `Send Outlook Mail Message`
 5. Run the automation
 6. At the end:
    - Successful entries will be submitted to the web app
-   - Duplicate errors will trigger screenshot + email to Sivanesan.Letchumanan@dhl.com
+   - Duplicate errors will trigger a screenshot + email to  smtuhin957@gmail.com
 
 📧 Email Report
 - If a duplicate or other error is found, a screenshot is taken
-- An email is sent to: Sivanesan.Letchumanan@dhl.com
+- An email is sent to: smtuhin957@gmail.com
 - Email subject: Leave Update Error
 - The email contains:
   - Total success count
   - Total failure count
   - Attached screenshots (if any)
 
-👤 Author
-S M Tuhin
-Software Engineering (4th Year) – UTM Kuala Lumpur
-Passionate about web development and automation
